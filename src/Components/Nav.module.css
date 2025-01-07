@@ -4,10 +4,15 @@
     justify-content: center;
 }
 
+.subContainer {
+    width: 95%;
+    max-width: 1440px;
+}
+
 nav {
     background: rgb(140, 89, 59);
     background: linear-gradient(90deg, rgba(140, 89, 59, 1) 0%, rgba(217, 158, 106, 1) 100%);
-    width: 95%;
+    width: 100%;
     height: 105px;
     max-width: 1440px;
     display: flex;
@@ -63,9 +68,80 @@ li:hover {
     text-decoration: underline;
 }
 
-@media(max-width:750px) {
-     {
-        
+.small button {
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
 
+.small button:hover {
+    cursor: pointer;
+}
+
+.small {
+    display: none;
+    background-color: white;
+    color: black;
+    position: relative;
+}
+
+.slideDown {
+    animation-name: slide;
+    animation-duration: 1s;
+} 
+
+.small ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+}
+
+.small ul li {
+    padding: 10px 20px 10px 30px;
+}
+
+.small ul li:hover {
+    color: white;
+    background: rgb(140, 89, 59);
+    background: linear-gradient(90deg, rgba(140, 89, 59, 1) 0%, rgba(217, 158, 106, 1) 100%);
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        bottom: 100px
+    }
+
+    25% {
+        opacity: 25%;
+        bottom: 75px
+    }
+
+    50% {
+        opacity: 50%;
+        bottom: 50px
+    }
+
+    75% {
+        opacity: 75%;
+        bottom: 25px
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+
+@media(max-width:750px) {
+    .big {
+        display: none;
+    }
+
+    .small {
+        display: block;
     }
 }
