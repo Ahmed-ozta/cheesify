@@ -33,9 +33,12 @@ nav {
 .left {
     display: flex;
     align-items: center;
-    font-size: 2em;
 
+}
 
+h1 {
+    font-size: 2.5em;
+    font-weight: 400;
 }
 
 .left img {
@@ -71,7 +74,7 @@ li:hover {
 .small button {
     background-color: transparent;
     border: none;
-    position: fixed;
+    position: absolute;
     top: 50px;
     right: 50px;
 }
@@ -84,22 +87,38 @@ li:hover {
     display: none;
     background-color: white;
     color: black;
-    position: relative;
+
 }
 
-.slideDown {
-    animation-name: slide;
-    animation-duration: 1s;
-} 
+
+.opacity0 {
+    opacity: 0;
+}
+
+.opacity1 {
+    opacity: 1;
+}
+
+.block {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
 
 .small ul {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
-    display: none;
+    background-color: white;
+
+
 }
 
 .small ul li {
+
     padding: 10px 20px 10px 30px;
 }
 
@@ -109,32 +128,7 @@ li:hover {
     background: linear-gradient(90deg, rgba(140, 89, 59, 1) 0%, rgba(217, 158, 106, 1) 100%);
 }
 
-@keyframes slide {
-    0% {
-        opacity: 0;
-        bottom: 100px
-    }
 
-    25% {
-        opacity: 25%;
-        bottom: 75px
-    }
-
-    50% {
-        opacity: 50%;
-        bottom: 50px
-    }
-
-    75% {
-        opacity: 75%;
-        bottom: 25px
-    }
-
-    100% {
-        opacity: 1;
-        bottom: 0px;
-    }
-}
 
 @media(max-width:750px) {
     .big {

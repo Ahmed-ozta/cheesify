@@ -1,5 +1,40 @@
 body {
   margin: 0px;
-  font-family: '';
+  font-family: 'Montserrat', 'sans-serif';
+
   background-color: #F2E6CE;
+}
+
+#barMenu {
+  position: absolute;
+  width: 95%;
+}
+
+.slideRight {
+  animation-name: slide;
+  animation-duration: 500ms;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0%;
+  }
+
+  25% {
+    opacity: 25%;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  75% {
+    opacity: 75%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+
+
 }

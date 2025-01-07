@@ -1,20 +1,17 @@
+import { useRef } from "react";
 import style from "./Nav.module.css"
 function Nav() {
-
+    const menuBar = useRef<HTMLDivElement>(null);
     function displayMenu(): void {
-        const menu = document.getElementById("menu");
-        const barMenu = document.getElementById("barMenu")
-        if (menu && barMenu) {
-            if (menu.style.display === "none" || !menu.style.display) {
-                menu.style.display = "block"
-                setTimeout(() => {
-                    barMenu.style.opacity = "1";
-                    barMenu.classList.add("slideDown");
-                }, 1000)
+        // className={`${show ? `${style.opacity1} ${style.block} ${style.slideRight}` : `${style.opacity0} ${style.hidden}`}`}
+        if (menuBar.current) {
+            if (menuBar.current.style.display === "none") {
+                menuBar.current.style.display = "block";
+                menuBar.current.classList.add("slideRight");
             } else {
-                menu.style.display = "none";
-                barMenu.style.opacity = "0";
-                barMenu.classList.remove("slideDown")
+                menuBar.current.classList.remove("slideRight");
+                menuBar.current.style.display = "none";
+
             }
         }
 
@@ -41,14 +38,14 @@ function Nav() {
                                 </ul>
                             </div>
                             <div className={style.small}>
-                                <button onClick={() => displayMenu()} ><img src="public\Hamburger_MD.svg" /></button>
+                                <button onClick={() => displayMenu()}><img src="public\Hamburger_MD.svg" /></button>
 
                             </div>
                         </div>
                     </div>
 
                 </nav>
-                <div id="barMenu" className={style.small}>
+                <div id="barMenu" ref={menuBar} className={style.small}>
                     <ul id="menu" >
                         <li><a>Home</a></li>
                         <li><a>Play</a></li>
