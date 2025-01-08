@@ -1,0 +1,100 @@
+/* ------First Container------ */
+.firstContainer {
+    height: 450px;
+    background-image: url("public/Explore Chess_ History, Champions, and More.png");
+    background-color: #8C593B;
+    margin-top: 28px;
+    color: white;
+    padding-top: 220px;
+    padding-left: 63px;
+}
+
+.text {
+    width: 80%;
+    max-width: 1920px;
+}
+
+.text h2 {
+    font-weight: 800;
+    font-size: 2em;
+}
+
+.text p {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+/* ------Second  Container------ */
+.secondContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.sub2Container {
+    width: 95%;
+    max-width: 1920px;
+    color: #8C593B;
+}
+
+.sub2Container h2 {
+    font-size: 2em;
+    text-align: center;
+
+}
+
+.content2Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content2Container p {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+/* -----------Third  Container-------- */
+.thirdContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    background: rgb(217, 158, 106);
+    background: linear-gradient(-71deg, rgba(217, 158, 106, 1) 0%, rgba(140, 89, 59, 1) 61%);
+}
+
+.sub3container {
+    width: 95%;
+    max-width: 1920px;
+}
+
+
+
+
+
+@media (max-width:750px) {
+    .firstContainer {
+        background-image: url("public/Explore Chess_ History, Champions, and More (1).png");
+    }
+
+    .content2Container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .secondContainer {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:500px) {
+    .firstContainer {
+        background-image: url("public/fischer_bg.png");
+    }
+
+    .content2Container img {
+        width: 390px;
+    }
+}
