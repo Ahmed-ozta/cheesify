@@ -1,9 +1,9 @@
 /* ------First Container------ */
 .firstContainer {
-    height: 450px;
+    height: 380px;
     background-image: url("public/Explore Chess_ History, Champions, and More.png");
     background-color: #8C593B;
-    margin-top: 28px;
+    margin-top: 20px;
     color: white;
     padding-top: 220px;
     padding-left: 63px;
@@ -21,7 +21,7 @@
 
 .text p {
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 /* ------Second  Container------ */
@@ -29,7 +29,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .sub2Container {
@@ -51,9 +51,10 @@
 }
 
 .content2Container p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-right: 10px;
 }
+
 
 /* -----------Third  Container-------- */
 .thirdContainer {
