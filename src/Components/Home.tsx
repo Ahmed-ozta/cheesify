@@ -1,5 +1,7 @@
 import Nav from "./Nav"
 import style from "./Home.module.css"
+import Card from "./Card";
+import Player from "./Player";
 function Home() {
     return (
         <>
@@ -23,9 +25,29 @@ function Home() {
             </div>
             {/* -----third container--------- */}
             <div className={style.thirdContainer}>
+
                 <div className={style.sub3container}>
                     <h2>Pieces</h2>
+                    <div className={style.CardContainer}>
+                        <Card image="images\Vector.png" title="King" description="The most important piece on the board. The king can move one square in any direction. The game ends when the king is checkmated." />
+                        <Card image="images\Group (4).svg" title="Queen" description="The most powerful piece. The queen can move any number of squares in any direction—horizontally, vertically, or diagonally." />
+                        <Card image="images\Group (5).svg" title="Rook" description="The rook moves horizontally or vertically any number of squares. It is also involved in castling with the king." />
+                        <Card image="images\Group 76.svg" title="Bishop" description="The bishop moves diagonally any number of squares. Each player has two bishops, one that moves on light squares and one on dark squares." />
+                        <Card image="images\Group (6).svg" title="Knight" description="The knight moves in an ‘L’ shape: two squares in one direction and then one square perpendicular to that. Knights are the only pieces that can jump over others." />
+                        <Card image="images\Vector (1).svg" title="Pawn" description=" Pawns move one square forward but capture diagonally. On their first move, they can advance two squares. When a pawn reaches the opposite side, it can be promoted to any piece except the king.." />
+                    </div>
 
+                </div>
+            </div>
+            {/* -----fourth container--------- */}
+            <div className={style.fourthContainer}>
+                <div className={style.sub4container}>
+                    <button>#icon</button>
+                    <div className={style.PlayerContainer}>
+                        <Player />
+                        
+                    </div>
+                    <button>#icon</button>
                 </div>
             </div>
 

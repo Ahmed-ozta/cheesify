@@ -1,0 +1,27 @@
+.card {
+    width: 350px;
+    height: 200PX;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(242, 188, 121);
+    background: linear-gradient(-73deg, rgba(242, 188, 121, 1) 0%, rgba(242, 219, 174, 1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+.container {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: #8C593B;
+}
+
+.container p {
+    font-size: 0.8em;
+}
+
+.card img {
+    margin-right: 25px;
+    margin-left: 25px;
+}

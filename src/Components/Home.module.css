@@ -61,7 +61,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 500px;
     background: rgb(217, 158, 106);
     background: linear-gradient(-71deg, rgba(217, 158, 106, 1) 0%, rgba(140, 89, 59, 1) 61%);
 }
@@ -69,6 +68,31 @@
 .sub3container {
     width: 95%;
     max-width: 1920px;
+}
+
+.sub3container h2 {
+    text-align: center;
+    color: white;
+}
+
+.CardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* -----------Fourth  Container-------- */
+.fourthContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sub4container{
+    width: 95%;
 }
 
 
@@ -88,9 +112,21 @@
     .secondContainer {
         margin-bottom: 20px;
     }
+
+    .CardContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
 }
 
 @media (max-width:500px) {
+    .CardContainer {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+
     .firstContainer {
         background-image: url("public/fischer_bg.png");
     }
