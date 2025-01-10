@@ -45,12 +45,14 @@ function Home() {
                     <button>#icon</button>
                     <div className={style.PlayerContainer}>
                         <Player />
-                        
+                        <Player />
+                        <Player />
+
                     </div>
                     <button>#icon</button>
                 </div>
-            </div>
 
+            </div>
         </>
     )
 }

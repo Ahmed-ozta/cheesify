@@ -94,6 +94,10 @@
 .sub4container{
     width: 95%;
 }
+.PlayerContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 
