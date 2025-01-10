@@ -44,9 +44,9 @@ function Home() {
                 <div className={style.sub4container}>
                     <button>#icon</button>
                     <div className={style.PlayerContainer}>
-                        <Player />
-                        <Player />
-                        <Player />
+                        <Player name="Magnus Carlsen" nationality="Norway" description="The reigning World Chess Champion (as of 2024), Carlsen is celebrated for his versatility, exceptional endgame skills, and ability to grind out wins from equal positions. Known as the ‘Mozart of Chess,’ he is considered one of the best players in history." elo="2882" imgSrc="/Carlsen_Magnus_(30238051906).jpg" />
+                        <Player name="Bobby Fischer" nationality="USA" description="A chess prodigy and one of the greatest players of all time, Fischer was known for his deep opening preparation and sharp, tactical play. His 1972 World Championship match against Boris Spassky is legendary. Fischer’s dominance during his peak era set a new standard in chess." elo="2785" imgSrc="/640px-Bobby_Fischer_1960_in_Leipzig_in_color.jpg" />
+                        <Player name="" nationality="" description="" elo="" imgSrc="public/Mikhail_Tal_1982.jpg" />
 
                     </div>
                     <button>#icon</button>
