@@ -86,17 +86,36 @@
 }
 
 /* -----------Fourth  Container-------- */
-.fourthContainer{
+.fourthContainer {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.sub4container{
+
+.sub4container {
     width: 95%;
 }
-.PlayerContainer{
+
+.PlayerContainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PlayerContainer button {
+    background-color: transparent;
+    border: none;
+}
+
+.PlayerContainer button {
+    cursor: pointer;
+}
+
+
+.PlayerContainer button:active {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 

@@ -53,3 +53,32 @@ body {
 .el-1:hover .target-block {
   transform: translateY(0);
 }
+@keyframes scrollLeft {
+  0% {
+    opacity: 100%;
+    transform: scaleX(0);
+  }
+
+  25% {
+    opacity: 75%;
+    transform: scaleX(5);
+  }
+  
+
+  50% {
+    opacity: 50%;
+    transform: scaleX(10);
+  }
+  
+
+  75% {
+    opacity: 25%;
+    transform: scaleX(15);
+  }
+  
+  100% {
+    opacity: 0%;
+    transform: scaleX(20);
+  }
+  
+}
